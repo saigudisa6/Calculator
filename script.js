@@ -57,7 +57,6 @@ function operandFound(e)
     {
         strFunc += op;
 
-        console.log(strFunc);
         display.innerHTML = '<div>'+strFunc+'</div';
     }
     else clear();
@@ -92,7 +91,6 @@ function enter(e)
 {
     if(numStr != '' || nums.length < 2) nums.push(parseInt(numStr));
     let result = operate(nums[0], prevOp, nums[1]);
-    console.log(nums);
     outDisplay.innerHTML = '';
     outDisplay.innerHTML = '<div>' + result + '</div>';
     clear();
